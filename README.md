@@ -13,6 +13,7 @@ Follow the steps below to set up the environment and run the code.
 First, clone the repository to your local machine:
 ```bash
 git clone https://github.com/Ren%20Julia/2024-qps.git
+```
 
 ### Step 2: Set Up a Python Virtual Environment
 It is recommended to use a virtual environment to avoid conflicts with other packages on your system. To create and activate the virtual environment, run the following commands:
