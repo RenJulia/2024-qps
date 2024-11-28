@@ -3,7 +3,7 @@
 This repository contains the code to fetch US CPI data and analyze the last 4 quarters of inflation in the United States. The analysis is done using Python, Pandas, and Jupyter Notebook.
 
 ## GitHub Repository URL
-[https://github.com/Ren%20Julia/2024-qps](https://github.com/Ren%20Julia/2024-qps)
+https://github.com/RenJulia/2024-qps?tab=readme-ov-file
 
 ## How to Run the Code
 
