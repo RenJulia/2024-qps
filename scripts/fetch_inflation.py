@@ -10,22 +10,6 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 's
 from data_utils import fetch_cpi_data, calculate_inflation
 
 
-def fetch_cpi_data():
-    """
-    Fetch the US CPI (Consumer Price Index) data from the FRED database.
-    """
-    cpi_data = web.DataReader('CPIAUCNS', 'fred', start=datetime(2000, 1, 1))
-    return cpi_data
-
-def calculate_inflation(cpi_data):
-    """
-    Calculate the quarterly inflation rate based on the CPI data.
-    """
-    # Resample data to quarterly frequency and calculate the percentage change
-    cpi_quarterly = cpi_data.resample('Q').last()
-    cpi_quarterly['Inflation'] = cpi_quarterly['CPIAUCNS'].pct_change() * 100
-    return cpi_quarterly
-
 def main():
     # Fetch CPI data
     cpi_data = fetch_cpi_data()
